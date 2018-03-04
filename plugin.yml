@@ -1,0 +1,19 @@
+name: Eventer
+author: Perri
+main: sk.perri.eventer.Main
+version: 0.1.0
+commands:
+  eventer:
+    aliases: [ev]
+    usage: /eventer <cmd> [params]
+    description: Main command of Eventer plugin
+permissions:
+  eventer.*:
+    child:
+      eventer.moderator
+      eventer.admin
+    default: op
+  eventer.moderator:
+    description: Able to make events
+  eventer.admin:
+    description: Able to manage arenas
